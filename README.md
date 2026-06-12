@@ -1,16 +1,90 @@
-# React + Vite
+# 📝 React Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Notes App built using React. I created this project while learning React to get hands-on experience with concepts like state management, hooks, conditional rendering, and local storage.
 
-Currently, two official plugins are available:
+The app allows users to create, search, and delete notes while automatically saving them in the browser, so notes remain available even after refreshing the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Add Notes
 
-## Expanding the ESLint configuration
+Users can create notes with a maximum length of 200 characters. A character counter helps keep track of the remaining limit.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Delete Notes
+
+Notes can be removed easily by clicking the delete icon.
+
+### Search Notes
+
+A search bar allows users to quickly find notes by filtering them based on their content.
+
+### Dark Mode
+
+The application includes a dark mode toggle for a more comfortable viewing experience.
+
+### Persistent Storage
+
+All notes are stored in the browser using localStorage, ensuring that data is not lost when the page is refreshed or reopened.
+
+---
+
+## Technologies Used
+
+- React (Vite)
+- JavaScript (ES6+)
+- React Hooks
+  - `useState`
+  - `useEffect`
+
+- Local Storage API
+- CSS Grid
+- Responsive Design
+
+---
+
+## What I Learned
+
+While building this project, I gained practical experience with:
+
+- Managing component state using React Hooks
+- Updating the UI dynamically based on user interactions
+- Persisting data using localStorage
+- Implementing search and filtering functionality
+- Creating reusable React components
+- Building responsive layouts using CSS Grid
+
+---
+
+## Running the Project Locally
+
+1. Clone or download the repository.
+2. Open the project folder in your terminal.
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local URL shown in the terminal to view the application.
+
+---
+
+## Future Improvements
+
+- Add note categories or tags
+- Allow editing existing notes
+- Add note colors and customization options
+- Implement cloud synchronization
+- Add user authentication
+
+---
+
+This project was built as part of my React learning journey and helped me understand how React applications manage state, handle user input, and store data locally.
