@@ -58,3 +58,29 @@ textarea:focus {
   align-items: center;
   justify-content: space-between;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  background-color: rgb(233, 233, 233);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search input {
+  width: 420px;
+  height: 30px;
+  border: none;
+  background-color: rgb(233, 233, 233);
+}
+
+input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
