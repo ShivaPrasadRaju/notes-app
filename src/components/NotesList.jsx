@@ -6,7 +6,12 @@ export default function NotesList({ notes, handleAddNote, deleteNote }) {
     <div className="notes-list">
       <AddNote handleAddNote={handleAddNote} />
       {notes.map((note) => (
-        <Note notes={notes} deleteNote={deleteNote} />
+        <Note
+          id={note.id}
+          text={note.text}
+          date={note.date}
+          deleteNote={deleteNote}
+        />
       ))}
     </div>
   );
