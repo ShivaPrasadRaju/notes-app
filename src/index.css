@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  transition: background 0.2s linear;
 }
 
 .container {
@@ -59,6 +64,8 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .note-footer {
@@ -94,9 +101,9 @@ input:focus {
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: #292c35;
 }
 
 .dark-mode h1 {
-  color: white;
+  color: #fff;
 }
